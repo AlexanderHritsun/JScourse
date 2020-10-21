@@ -22,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../financials/ac-test-core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -49,6 +49,7 @@
       <workItem from="1602666662483" duration="631000" />
       <workItem from="1602674141153" duration="48000" />
       <workItem from="1602674197071" duration="13000" />
+      <workItem from="1603303250421" duration="4038000" />
     </task>
     <servers />
   </component>
