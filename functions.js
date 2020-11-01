@@ -20,7 +20,7 @@ const getSum2 = function (a, b) {
 
 getSum2(5, 10);
 
-// arrow function
+// arrow function !!! no this !!!
 const getSum3 = (a, b) => { // const getSum3 = a => a*a;
     return a + b;
 }
