@@ -20,7 +20,8 @@ const getSum2 = function (a, b) {
 
 getSum2(5, 10);
 
-// arrow function !!! no this !!!
+// arrow function !!! this - doesn't have own context in the arrow functions !!!
+// With an arrow function THIS represents the owner of the function
 const getSum3 = (a, b) => { // const getSum3 = a => a*a;
     return a + b;
 }

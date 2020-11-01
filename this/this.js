@@ -34,10 +34,10 @@ person.sayHello();
 person.logInfo();
 person.logInfo.bind(alex, '123-33-444-555', 'sdet')();
 /*Function call via func.apply works similarly to func.call, but receives the array of args instead of list.*/
-person.logInfo.call(alex, '123-33-444-555', 'sdet');
-person.logInfo.apply(alex, ['123-33-444-555', 'sdet']);
+// person.logInfo.call(alex, '123-33-444-555', 'sdet');
+// person.logInfo.apply(alex, ['123-33-444-555', 'sdet']);
 
-// What we will get here???
+// What will we get here???
 const person2 = {
     name: 'Vlad',
     age: 30,
@@ -45,10 +45,12 @@ const person2 = {
         console.group('Person info:');
         console.log(`Name is ${this.name}`);
         console.log(`Age is ${this.age}`);
+        console.log(`Person2 THIS === ${this}`);
         console.groupEnd();
     }
 };
 
+person2.logInfo();
 
 // Task: create function which will receives an array and Number as arguments and then each array's element should be
 // multiplied on this Number. -> Make this function as an array method
