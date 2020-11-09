@@ -39,7 +39,15 @@ console.log(values);
 console.log(entries);
 
 // ===============================================================================//
+/* add obj properties and methods */
+const emptyObj = {};
+emptyObj.name = 'Alex';
+emptyObj.role = 'tutor';
+emptyObj.getInfo = function () {
+    console.log(`User "${emptyObj.name}" has role "${emptyObj.role}"`);
+}
 
+emptyObj.getInfo();
 
 // ===============================================================================//
 
