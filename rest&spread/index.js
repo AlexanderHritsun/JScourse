@@ -44,6 +44,7 @@ console.log(nodes, Array.isArray(nodes)); // array
 
 function sum(a, b, ...rest) {
     console.log(rest); // will return an arguments array
+    //console.log(...rest); spread in this case
     return a + b + rest.reduce((a, i) => a + i, 0);
 }
 
