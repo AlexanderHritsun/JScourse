@@ -145,3 +145,23 @@ console.log(arr2);
 let arr3 = ['I`m', 'studying', 'programming', 'lessons'];
 arr3.splice(2, 0, 'amazing', 'language on');
 console.log(arr3);
+
+
+// popping and pushing and shifting
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop(); // Mango || "Banana", "Orange", "Apple"
+fruits.push('Mango'); // "Banana", "Orange", "Apple", "Mango"
+fruits.shift(); // "Orange", "Apple", "Mango" = works as pop but with the first element
+
+//Merging arrays:
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+console.log(myChildren); // The concat() method does not change the existing arrays. It always returns a new array.
+
+//Sorting arrays
+fruits.sort();        // First sort the elements of fruits.  By default, the sort() function sorts values as strings.
+fruits.reverse();     // Then reverse the order of the elements
+// Sorting the numbers
+const points = [40, 100, 1, 5, 25, 10];
+console.log(points.sort((a, b) =>  a - b));
