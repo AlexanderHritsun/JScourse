@@ -27,3 +27,41 @@ const getSum3 = (a, b) => { // const getSum3 = a => a*a;
 }
 
 getSum3(5, 10);
+
+
+const testFunc = (t) => {
+    const variable = 1;
+    console.log(this);
+    console.log(this.t);
+}
+
+const testFunc2 = function(){
+    const variable = 1;
+    console.log(this);
+}
+
+function testFunc3(t){
+    const variable = 1;
+    console.log(this);
+    console.log(this.t);
+}
+
+testFunc();
+testFunc2();
+testFunc3();
+
+const logNumbers = number => {
+    for(let i = number; i !== 0; i--) {
+        console.log(i);
+    }
+}
+
+const logNumbers2 = number => {
+    console.log(number);
+    const nextNumber = number - 1;
+    if (nextNumber > 0) logNumbers2(nextNumber);
+}
+
+//logNumbers(5);
+logNumbers2(5);
+
